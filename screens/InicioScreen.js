@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     justifyContent: 'flex-start',
     alignItems: 'center',
-    padding:10
+    paddingBottom: 20
   },
   imagem: {
     width: '100%',
