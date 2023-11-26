@@ -2,7 +2,6 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 import TelaInicial from '../screens/InicioScreen'; // Importe a nova tela
-import NotificacoesScreen from '../screens/NotificacoesScreen';
 import ReceitasScreen from '../screens/ReceitasScreen';
 import RestaurantesScreen from '../screens/RestaurantesScreen';
 import PedidosScreen from '../screens/PedidosScreen';
@@ -13,7 +12,6 @@ const Tab = createBottomTabNavigator();
 const Navbar = () => {
   return (
     <>
-
       <Tab.Navigator
         screenOptions={{
           tabBarActiveTintColor: 'orangered',
@@ -36,16 +34,7 @@ const Navbar = () => {
             ),
           }}
         />
-        <Tab.Screen
-          name="Notificacoes"
-          component={NotificacoesScreen}
-          options={{
-            tabBarLabel: 'NOTIFICAÇÕES',
-            tabBarIcon: ({ color, size }) => (
-              <Ionicons name="notifications" color={color} size={size} />
-            ),
-          }}
-        />
+        
         <Tab.Screen
           name="Receitas"
           component={ReceitasScreen}
