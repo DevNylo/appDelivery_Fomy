@@ -1,8 +1,7 @@
-// Importe as bibliotecas necessárias
+
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-// Defina o componente InicioScreen
 const PedidosScreen = () => {
   return (
     <View style={styles.container}>
@@ -11,7 +10,6 @@ const PedidosScreen = () => {
   );
 };
 
-// Estilos CSS
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -24,5 +22,5 @@ const styles = StyleSheet.create({
   },
 });
 
-// Exporte o componente
+
 export default PedidosScreen;

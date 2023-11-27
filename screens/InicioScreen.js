@@ -57,7 +57,6 @@ const InicioScreen = () => {
 
       <Text style={styles.comoFunciona}>RESTAURANTES EM DESTAQUE</Text>
 
-      {/* Sua imagem e informações adicionadas */}
         <View style={styles.destaqueContainer}>
           <Image
             source={require('../assets/images/listing-logo03.png')}
@@ -179,8 +178,8 @@ const styles = StyleSheet.create({
       fontWeight: 'bold',
       fontSize: 16,
       position: 'absolute',
-      top: '35%',  // Posição vertical centralizada
-      transform: [{ translateY: -25 }],  // Ajuste fino para centralizar
+      top: '35%', 
+      transform: [{ translateY: -25 }],  
     },
     botaoPecaAgora: {
       backgroundColor: 'orange',
@@ -188,7 +187,7 @@ const styles = StyleSheet.create({
       paddingHorizontal: 20,
       borderRadius: 5,
       alignItems: 'center',
-      marginTop: -200,  // Ajuste a margem superior conforme necessário
+      marginTop: -200,  
     },
      destaqueContainer: {
         flexDirection: 'row',
@@ -199,8 +198,8 @@ const styles = StyleSheet.create({
         padding:20,
       },
       imagemDestaque: {
-        width: '50%', // Ajuste conforme necessário
-        height: 200,   // Ajuste conforme necessário
+        width: '50%', 
+        height: 200,   
         resizeMode: 'cover',
       },
       textoDestaqueContainer: {

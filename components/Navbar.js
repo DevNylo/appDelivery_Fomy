@@ -1,11 +1,11 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
-import TelaInicial from '../screens/InicioScreen'; // Importe a nova tela
 import ReceitasScreen from '../screens/ReceitasScreen';
 import RestaurantesScreen from '../screens/RestaurantesScreen';
 import PedidosScreen from '../screens/PedidosScreen';
-import { SearchBar } from 'react-native-elements';
+import InicioScreen from '../screens/InicioScreen';
+import MapScreen from '../screens/MapScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -26,11 +26,21 @@ const Navbar = () => {
       >
         <Tab.Screen
           name="INÍCIO"
-          component={TelaInicial}
+          component={InicioScreen}
           options={{
             tabBarLabel: 'INÍCIO',
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="home" color={color} size={size} />
+            ),
+          }}
+        />
+        <Tab.Screen
+          name="MAPA"
+          component={MapScreen}
+          options={{
+            tabBarLabel: 'MAPA',
+            tabBarIcon: ({ color, size }) => (
+              <Ionicons name="map" color={color} size={size} />
             ),
           }}
         />

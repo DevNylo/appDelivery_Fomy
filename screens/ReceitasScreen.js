@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, FlatList, Image, Text, StyleSheet, ScrollView, Dimensions } from 'react-native';
+import { View, FlatList, Image, Text, StyleSheet, ScrollView, Dimensions, TouchableOpacity } from 'react-native';
+
 
 const data = [
   {
@@ -65,15 +66,22 @@ const data = [
 
 ];
 
-const ReceitasScreen = () => {
-  const renderItem = ({ item }) => (
-    <View style={styles.itemContainer}>
+const ReceitasScreen = ({ navigation }) => {
+  const renderItem = ({ item, index }) => (
+    <TouchableOpacity
+      style={styles.itemContainer}
+      onPress={() => handleItemPress(index)}
+    >
       <Image source={{ uri: item.image }} style={styles.image} />
       <Text style={styles.title}>{item.title}</Text>
       <Text style={styles.description}>{item.description}</Text>
-    </View>
+    </TouchableOpacity>
   );
 
+  const handleItemPress = (index) => {
+
+    navigation.navigate(`/receitas/Receitas1.js`);
+  };
   const numColumns = 2;
   const screenWidth = Dimensions.get('window').width;
   const itemWidth = screenWidth / numColumns;
@@ -96,8 +104,8 @@ const styles = StyleSheet.create({
   itemContainer: {
     flex: 1,
     margin: 5,
-    width: '48%', // Ou use itemWidth se desejar uma largura mais específica
-    alignItems: 'center', // Centraliza os itens horizontalmente
+    width: '48%', 
+    alignItems: 'center', 
   },
   image: {
     width: '100%',

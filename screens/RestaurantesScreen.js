@@ -24,7 +24,7 @@ const RestaurantesScreen = () => {
       { title: 'Restaurante Vegano 8', image: require('../assets/restaurantes/vegano/8.png') },
       { title: 'Restaurante Vegano 9', image: require('../assets/restaurantes/vegano/9.png') },
       { title: 'Restaurante Vegano 10', image: require('../assets/restaurantes/vegano/10.png') },
-      // Adicione mais itens conforme necessário
+      
     ],
     Churrasco: [
       { title: 'Restaurante de Churrasco 1', image: require('../assets/restaurantes/churras/1.png') },
@@ -37,7 +37,7 @@ const RestaurantesScreen = () => {
       { title: 'Restaurante de Churrasco 8', image: require('../assets/restaurantes/churras/8.png') },
       { title: 'Restaurante de Churrasco 9', image: require('../assets/restaurantes/churras/9.png') },
       { title: 'Restaurante de Churrasco 10', image: require('../assets/restaurantes/churras/10.png') },
-      // Adicione mais itens conforme necessário
+     
     ],
     Lanches: [
       { title: 'Lanchonete 1', image: require('../assets/restaurantes/lanche/1.png') },
@@ -50,7 +50,7 @@ const RestaurantesScreen = () => {
       { title: 'Lanchonete 8', image: require('../assets/restaurantes/lanche/8.png') },
       { title: 'Lanchonete 9', image: require('../assets/restaurantes/lanche/9.png') },
       { title: 'Lanchonete 10', image: require('../assets/restaurantes/lanche/10.png') },
-      // Adicione mais itens conforme necessário
+     
     ],
     Asiática: [
       { title: 'Comida Asiática 1', image: require('../assets/restaurantes/asiatico/1.png') },
@@ -63,7 +63,7 @@ const RestaurantesScreen = () => {
       { title: 'Comida Asiática 8', image: require('../assets/restaurantes/asiatico/8.png') },
       { title: 'Comida Asiática 9', image: require('../assets/restaurantes/asiatico/9.png') },
       { title: 'Comida Asiática 10', image: require('../assets/restaurantes/asiatico/10.png') },
-      // Adicione mais itens conforme necessário
+      
     ],
   };
 
