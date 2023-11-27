@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 import ReceitasScreen from '../screens/ReceitasScreen';
 import RestaurantesScreen from '../screens/RestaurantesScreen';
-import PedidosScreen from '../screens/PedidosScreen';
+import SupportScreen from '../screens/SupportScreen';
 import InicioScreen from '../screens/InicioScreen';
 import MapScreen from '../screens/MapScreen';
 
@@ -66,12 +66,12 @@ const Navbar = () => {
           }}
         />
         <Tab.Screen
-          name="Pedidos"
-          component={PedidosScreen}
+          name="SUPORTE"
+          component={SupportScreen}
           options={{
-            tabBarLabel: 'PEDIDOS',
+            tabBarLabel: 'SUPORTE',
             tabBarIcon: ({ color, size }) => (
-              <Ionicons name="list" color={color} size={size} />
+              <Ionicons name="help-buoy" color={color} size={size} />
             ),
           }}
         />
